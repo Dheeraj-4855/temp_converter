@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js" defer></script>
+
+    <title>Temperature Convertor</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading text-blue">Temparature Converter</h1>
+        <div class="boxes">
+            <div class="cel">
+                <p class="lg-font">From:</p>
+                <select name="" id="option1" class="md-font" onchange="display()">
+                    <option value="Celcius" >Celcius</option>
+                    <option value="Farhenheight" >Farhenheight</option>
+                </select>
+            </div>
+            <div class="far">
+                <p class="lg-font ">To:</p>
+                <select name="" id="option2" class="md-font" onchange="display()">
+                    <option value="Farhenheight" >Farhenheight</option>
+                    <option value="Celcius" >Celcius</option>
+                </select>
+            </div>
+        </div>
+        <div class="show">
+            <div class="celci">
+                <p class="md-font">Celcius</p>
+                <input type="number" name="c_v" id="c_v" value="0"  onkeyup="ctof()">
+            </div>
+            <div class="faren">
+                <p class="md-font ">Farhenheight</p>
+                <input type="number" name="f_v" id="f_v" value="32"  onkeyup="ftoc()">
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

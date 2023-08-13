@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background: #8990ec;
+  }
+h1,h2,h3{
+    font-size: 3rem;
+}
+p{
+    font-size: 1.6rem;
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.lg-font{
+    font-size: 3rem;
+}
+.md-font{
+    font-size:2.4rem;
+}
+.sm-font{
+    font-size: 1.6rem;
+}
+.text-color{
+    color: rgb(212, 30, 121);
+}
+
+
+.container{
+    /* border: 2px solid red; */
+    max-width: 1200px;
+    width:35%;
+    /* height: 60vh; */
+    margin: auto;
+    margin-top: 10%;
+    box-shadow: 14px 12px 14px #817d7d;
+    background: #d4e4f9;
+    border-radius: 10%;
+    padding: 1rem;
+}
+
+.heading{
+    margin: 2rem;
+    padding: 1rem;
+    background: #9bd2e9;
+    border-radius:20px;
+}
+
+.boxes{
+    margin: 2rem;
+    padding: 2rem;
+
+
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+    justify-content: space-around;
+
+
+    background: #b3cef0;
+    border-radius:20px;
+
+}
+
+select{
+    outline: none;
+    /* border: 2px solid red; */
+    border-radius: 15px;
+    background: #3f89eb;
+    padding: 1rem;
+}
+
+select>option{
+    font-size: 1.6rem
+}
+p{
+    padding: 2px;
+    margin: 2px;
+
+    background: #8dbdf3;
+    border-radius: 10px;
+
+
+}
+.show{
+    margin: 2rem;
+    padding: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #d2e1f4;
+    border-radius:20px;
+}
+
+.celci,
+.faren{
+    width: 100%;
+    margin: 10px;
+}
+.celci{
+    /* order: 2; */
+}
+.celci input[type="number"],
+.faren input[type="number"]{
+    font-size: 1.6rem;
+    padding: 1rem;
+    width: 100%;
+    height: 50px;
+    border: 2px solid red;
+    border-radius:20px ;
+    background: #daf6f6;
+    color: slateblue;
+}
+
+@media(max-width:768px){
+    .container{
+        width: 90%;
+    }
+    .boxes{
+        flex-wrap: wrap;
+        margin: 0;
+    }
+}
+@media(max-width:1200px){
+
+    .container{
+        width: 50%;
+    }
+}
+
